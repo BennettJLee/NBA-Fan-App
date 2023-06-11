@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "Celtics",
+    "City": "Boston",
+    "Stadium": "TD Garden"
+  },
+  {
+    "_id": "Mavericks",
+    "City": "Dallas",
+    "Stadium": "American Airlines Center"
+  },
+  {
+    "_id": "Lakers",
+    "City": "Los Angeles",
+    "Stadium": "Crypto.com Arena"
+  },
+  {
+    "_id": "Bucks",
+    "City": "Milwaukee",
+    "Stadium": "Fiserv Forum"
+  },
+  {
+    "_id": "Suns",
+    "City": "Phoenix",
+    "Stadium": "Footprint Centre"
+  }
+]

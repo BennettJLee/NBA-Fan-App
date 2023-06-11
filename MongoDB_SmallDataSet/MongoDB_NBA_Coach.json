@@ -1,0 +1,42 @@
+[
+  {
+    "_id": 30,
+    "Role": "Head Coach",
+    "Team_Name": "Celtics"
+  },
+  {
+    "_id": 31,
+    "Role": "Head Coach",
+    "Team_Name": "Mavericks"
+  },
+  {
+    "_id": 32,
+    "Role": "Head Coach",
+    "Team_Name": "Lakers"
+  },
+  {
+    "_id": 33,
+    "Role": "Head Coach",
+    "Team_Name": "Bucks"
+  },
+  {
+    "_id": 34,
+    "Role": "Head Coach",
+    "Team_Name": "Suns"
+  },
+  {
+    "_id": 35,
+    "Role": "Assistant",
+    "Team_Name": "Celtics"
+  },
+  {
+    "_id": 36,
+    "Role": "Assistant",
+    "Team_Name": "Mavericks"
+  },
+  {
+    "_id": 37,
+    "Role": "Assistant",
+    "Team_Name": "Lakers"
+  }
+]

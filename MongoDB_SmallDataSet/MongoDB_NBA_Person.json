@@ -1,0 +1,224 @@
+[
+  {
+    "_id": 1,
+    "First_Name": "Marcus",
+    "Last_Name": "Smart",
+    "DOB": { "$date": "1994-03-06" }
+  },
+  {
+    "_id": 2,
+    "First_Name": "Luca",
+    "Last_Name": "Doncic",
+    "DOB": { "$date": "1999-02-28" }
+  },
+  {
+    "_id": 3,
+    "First_Name": "D'angelo",
+    "Last_Name": "Russell",
+    "DOB": { "$date": "1996-02-23" }
+  },
+  {
+    "_id": 4,
+    "First_Name": "Jrue",
+    "Last_Name": "Holiday",
+    "DOB": { "$date": "1990-06-12" }
+  },
+  {
+    "_id": 5,
+    "First_Name": "Chris",
+    "Last_Name": "Paul",
+    "DOB": { "$date": "1985-05-06" }
+  },
+  {
+    "_id": 6,
+    "First_Name": "Jalen",
+    "Last_Name": "Brown",
+    "DOB": { "$date": "1996-10-24" }
+  },
+  {
+    "_id": 7,
+    "First_Name": "Kyrie",
+    "Last_Name": "Irving",
+    "DOB": { "$date": "1992-03-23" }
+  },
+  {
+    "_id": 8,
+    "First_Name": "Malik",
+    "Last_Name": "Beasley",
+    "DOB": { "$date": "1996-11-26" }
+  },
+  {
+    "_id": 9,
+    "First_Name": "Grayson",
+    "Last_Name": "Allen",
+    "DOB": { "$date": "1995-10-08" }
+  },
+  {
+    "_id": 10,
+    "First_Name": "Devin",
+    "Last_Name": "Booker",
+    "DOB": { "$date": "1996-10-30" }
+  },
+  {
+    "_id": 11,
+    "First_Name": "Jayson",
+    "Last_Name": "Tatum",
+    "DOB": { "$date": "1998-03-03" }
+  },
+  {
+    "_id": 12,
+    "First_Name": "Josh",
+    "Last_Name": "Green",
+    "DOB": { "$date": "2000-11-06" }
+  },
+  {
+    "_id": 13,
+    "First_Name": "Lebron",
+    "Last_Name": "James",
+    "DOB": { "$date": "1984-12-20" }
+  },
+  {
+    "_id": 14,
+    "First_Name": "Kris",
+    "Last_Name": "Middleton",
+    "DOB": { "$date": "1991-08-12" }
+  },
+  {
+    "_id": 15,
+    "First_Name": "Josh",
+    "Last_Name": "Okogie",
+    "DOB": { "$date": "1998-09-01" }
+  },
+  {
+    "_id": 16,
+    "First_Name": "Al",
+    "Last_Name": "Horford",
+    "DOB": { "$date": "1986-06-03" }
+  },
+  {
+    "_id": 17,
+    "First_Name": "Reggie",
+    "Last_Name": "Bullock",
+    "DOB": { "$date": "1991-03-16" }
+  },
+  {
+    "_id": 18,
+    "First_Name": "Jarred",
+    "Last_Name": "Vanderbilt",
+    "DOB": { "$date": "1999-04-03" }
+  },
+  {
+    "_id": 19,
+    "First_Name": "Giannis",
+    "Last_Name": "Antetokounmpo",
+    "DOB": { "$date": "1994-12-06" }
+  },
+  {
+    "_id": 20,
+    "First_Name": "Kevin",
+    "Last_Name": "Durant",
+    "DOB": { "$date": "1988-09-29" }
+  },
+  {
+    "_id": 21,
+    "First_Name": "Robin",
+    "Last_Name": "Williams III",
+    "DOB": { "$date": "1997-10-17" }
+  },
+  {
+    "_id": 22,
+    "First_Name": "Dwight",
+    "Last_Name": "Powell",
+    "DOB": { "$date": "1991-07-20" }
+  },
+  {
+    "_id": 23,
+    "First_Name": "Anthony",
+    "Last_Name": "Davis",
+    "DOB": { "$date": "1993-03-11" }
+  },
+  {
+    "_id": 24,
+    "First_Name": "Brook",
+    "Last_Name": "Lopez",
+    "DOB": { "$date": "1988-04-01" }
+  },
+  {
+    "_id": 25,
+    "First_Name": "Deandre",
+    "Last_Name": "Ayton",
+    "DOB": { "$date": "1998-07-23" }
+  },
+  {
+    "_id": 26,
+    "First_Name": "Damian",
+    "Last_Name": "Lillard",
+    "DOB": { "$date": "1990-07-15" }
+  },
+  {
+    "_id": 27,
+    "First_Name": "Joel",
+    "Last_Name": "Embiid",
+    "DOB": { "$date": "1994-03-16" }
+  },
+  {
+    "_id": 28,
+    "First_Name": "Kawhi",
+    "Last_Name": "Leonard",
+    "DOB": { "$date": "1991-06-29" }
+  },
+  {
+    "_id": 29,
+    "First_Name": "Tyrese",
+    "Last_Name": "Haliburton",
+    "DOB": { "$date": "2000-02-29" }
+  },
+  {
+    "_id": 30,
+    "First_Name": "Joe",
+    "Last_Name": "Mazzulla",
+    "DOB": { "$date": "1988-06-20" }
+  },
+  {
+    "_id": 31,
+    "First_Name": "Jason",
+    "Last_Name": "Kidd",
+    "DOB": { "$date": "1973-03-13" }
+  },
+  {
+    "_id": 32,
+    "First_Name": "Darvin",
+    "Last_Name": "Ham",
+    "DOB": { "$date": "1973-07-23" }
+  },
+  {
+    "_id": 33,
+    "First_Name": "Mike",
+    "Last_Name": "Budenholzer",
+    "DOB": { "$date": "1969-08-06" }
+  },
+  {
+    "_id": 34,
+    "First_Name": "Monty",
+    "Last_Name": "Williams",
+    "DOB": { "$date": "1971-10-08" }
+  },
+  {
+    "_id": 35,
+    "First_Name": "Damon",
+    "Last_Name": "Stoudamire",
+    "DOB": { "$date": "1973-09-03" }
+  },
+  {
+    "_id": 36,
+    "First_Name": "Quinton",
+    "Last_Name": "Crawford",
+    "DOB": { "$date": "1990-09-18" }
+  },
+  {
+    "_id": 37,
+    "First_Name": "Phil",
+    "Last_Name": "Handy",
+    "DOB": { "$date": "1971-08-24" }
+  }
+]

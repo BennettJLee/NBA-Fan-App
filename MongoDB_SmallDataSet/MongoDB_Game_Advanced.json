@@ -1,0 +1,69 @@
+[
+  {
+    "$facet": {
+      "homeScores": [
+        {
+          "$project": {
+            "Team_Name": "$Home_Team_Name",
+            "Game_Score": "$Home_Team_Score",
+            "Opp_Game_Score": "$Away_Team_Score"
+          }
+        }
+      ],
+      "awayScores": [
+        {
+          "$project": {
+            "Team_Name": "$Away_Team_Name",
+            "Game_Score": "$Away_Team_Score",
+            "Opp_Game_Score": "$Home_Team_Score"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$project": {
+      "teamScores": {
+        "$concatArrays": [
+          "$homeScores",
+          "$awayScores"
+        ]
+      }
+    }
+  },
+  {
+    "$unwind": "$teamScores"
+  },
+  {
+    "$group": {
+      "_id": "$teamScores.Team_Name",
+      "ORating": {
+        "$avg": "$teamScores.Game_Score"
+      },
+      "DRating": {
+        "$avg": "$teamScores.Opp_Game_Score"
+      }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "Team_Name": "$_id",
+      "ORating": {
+        "$round": [ "$ORating", 2 ]
+      },
+      "DRating": {
+        "$round": [ "$DRating", 2 ]
+      },
+      "Net_Rating": {
+        "$subtract": [ "$ORating", "$DRating" ]
+      }
+    }
+  },
+  {
+    "$sort": {
+      "Net_Rating": -1,
+      "Team_Name": 1
+    }
+  }
+]

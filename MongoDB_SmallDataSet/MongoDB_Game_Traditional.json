@@ -1,0 +1,98 @@
+[
+  {
+    "$facet": {
+      "homeWinsLosses": [
+        {
+          "$project": {
+            "team_name": "$Home_Team_Name",
+            "wins": {
+              "$cond": [
+                {
+                  "$gt": [
+                    "$Home_Team_Score",
+                    "$Away_Team_Score"
+                  ]
+                },
+                1,
+                0
+              ]
+            },
+            "losses": {
+              "$cond": [
+                {
+                  "$gt": [
+                    "$Away_Team_Score",
+                    "$Home_Team_Score"
+                  ]
+                },
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ],
+      "awayWinsLosses": [
+        {
+          "$project": {
+            "team_name": "$Away_Team_Name",
+            "wins": {
+              "$cond": [
+                {
+                  "$gt": [
+                    "$Away_Team_Score",
+                    "$Home_Team_Score"
+                  ]
+                },
+                1,
+                0
+              ]
+            },
+            "losses": {
+              "$cond": [
+                {
+                  "$gt": [
+                    "$Home_Team_Score",
+                    "$Away_Team_Score"
+                  ]
+                },
+                1,
+                0
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$project": {
+      "teamWinsLosses": {
+        "$concatArrays": [
+          "$homeWinsLosses",
+          "$awayWinsLosses"
+        ]
+      }
+    }
+  },
+  {
+    "$unwind": "$teamWinsLosses"
+  },
+  {
+    "$group": {
+      "_id": "$teamWinsLosses.team_name",
+      "total_wins": {
+        "$sum": "$teamWinsLosses.wins"
+      },
+      "total_losses": {
+        "$sum": "$teamWinsLosses.losses"
+      }
+    }
+  },
+  {
+    "$sort": {
+      "total_wins": -1,
+      "_id": 1
+    }
+  }
+]

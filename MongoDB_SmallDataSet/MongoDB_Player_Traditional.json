@@ -1,0 +1,43 @@
+[
+  {
+    "$lookup": {
+      "from": "Person",
+      "localField": "Player_ID",
+      "foreignField": "_id",
+      "as": "person"
+    }
+  },
+  {
+    "$lookup": {
+      "from": "Player",
+      "localField": "Player_ID",
+      "foreignField": "_id",
+      "as": "player"
+    }
+  },
+  {
+    "$match": {
+      "player.Team_Name": {
+        "$ne": null
+      }
+    }
+  },
+  {
+    "$unwind": "$person"
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "Last_Name": "$person.Last_Name",
+      "PPG": 1,
+      "APG": 1,
+      "RPG": 1,
+      "FGP": 1
+    }
+  },
+  {
+    "$sort": {
+      "PPG": -1
+    }
+  }
+]

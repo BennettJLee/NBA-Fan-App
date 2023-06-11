@@ -1,0 +1,234 @@
+[
+  {
+    "_id": 1,
+    "Position": "PG",
+    "Height": "6'4\"",
+    "Salary": 17207142,
+    "Starter": 1,
+    "Team_Name": "Celtics"
+  },
+  {
+    "_id": 2,
+    "Position": "PG",
+    "Height": "6'7\"",
+    "Salary": 37096500,
+    "Starter": 1,
+    "Team_Name": "Mavericks"
+  },
+  {
+    "_id": 3,
+    "Position": "PG",
+    "Height": "6'4\"",
+    "Salary": 31377750,
+    "Starter": 1,
+    "Team_Name": "Lakers"
+  },
+  {
+    "_id": 4,
+    "Position": "PG",
+    "Height": "6'5\"",
+    "Salary": 32544000,
+    "Starter": 1,
+    "Team_Name": "Bucks"
+  },
+  {
+    "_id": 5,
+    "Position": "PG",
+    "Height": "6'0\"",
+    "Salary": 28400000,
+    "Starter": 1,
+    "Team_Name": "Suns"
+  },
+  {
+    "_id": 6,
+    "Position": "SG",
+    "Height": "6'6\"",
+    "Salary": 26669643,
+    "Starter": 1,
+    "Team_Name": "Celtics"
+  },
+  {
+    "_id": 7,
+    "Position": "SG",
+    "Height": "6'2\"",
+    "Salary": 36503300,
+    "Starter": 1,
+    "Team_Name": "Mavericks"
+  },
+  {
+    "_id": 8,
+    "Position": "SG",
+    "Height": "6'4\"",
+    "Salary": 15458035,
+    "Starter": 1,
+    "Team_Name": "Lakers"
+  },
+  {
+    "_id": 9,
+    "Position": "SG",
+    "Height": "6'4\"",
+    "Salary": 8500000,
+    "Starter": 1,
+    "Team_Name": "Bucks"
+  },
+  {
+    "_id": 10,
+    "Position": "SG",
+    "Height": "6'5\"",
+    "Salary": 33833400,
+    "Starter": 1,
+    "Team_Name": "Suns"
+  },
+  {
+    "_id": 11,
+    "Position": "SF",
+    "Height": "6'8\"",
+    "Salary": 30351780,
+    "Starter": 1,
+    "Team_Name": "Celtics"
+  },
+  {
+    "_id": 12,
+    "Position": "SF",
+    "Height": "6'7\"",
+    "Salary": 3098400,
+    "Starter": 1,
+    "Team_Name": "Mavericks"
+  },
+  {
+    "_id": 13,
+    "Position": "SF",
+    "Height": "6'9\"",
+    "Salary": 44474988,
+    "Starter": 1,
+    "Team_Name": "Lakers"
+  },
+  {
+    "_id": 14,
+    "Position": "SF",
+    "Height": "6'7\"",
+    "Salary": 37948276,
+    "Starter": 1,
+    "Team_Name": "Bucks"
+  },
+  {
+    "_id": 15,
+    "Position": "SF",
+    "Height": "6'4\"",
+    "Salary": 1968175,
+    "Starter": 1,
+    "Team_Name": "Suns"
+  },
+  {
+    "_id": 16,
+    "Position": "PF",
+    "Height": "6'9\"",
+    "Salary": 26500000,
+    "Starter": 1,
+    "Team_Name": "Celtics"
+  },
+  {
+    "_id": 17,
+    "Position": "PF",
+    "Height": "6'6\"",
+    "Salary": 10012800,
+    "Starter": 1,
+    "Team_Name": "Mavericks"
+  },
+  {
+    "_id": 18,
+    "Position": "PF",
+    "Height": "6'8\"",
+    "Salary": 4320000,
+    "Starter": 1,
+    "Team_Name": "Lakers"
+  },
+  {
+    "_id": 19,
+    "Position": "PF",
+    "Height": "7'0\"",
+    "Salary": 42492492,
+    "Starter": 1,
+    "Team_Name": "Bucks"
+  },
+  {
+    "_id": 20,
+    "Position": "PF",
+    "Height": "6'10\"",
+    "Salary": 42969845,
+    "Starter": 1,
+    "Team_Name": "Suns"
+  },
+  {
+    "_id": 21,
+    "Position": "C",
+    "Height": "6'9\"",
+    "Salary": 10714287,
+    "Starter": 1,
+    "Team_Name": "Celtics"
+  },
+  {
+    "_id": 22,
+    "Position": "C",
+    "Height": "6'10\"",
+    "Salary": 11080125,
+    "Starter": 1,
+    "Team_Name": "Mavericks"
+  },
+  {
+    "_id": 23,
+    "Position": "C",
+    "Height": "6'10\"",
+    "Salary": 37980720,
+    "Starter": 1,
+    "Team_Name": "Lakers"
+  },
+  {
+    "_id": 24,
+    "Position": "C",
+    "Height": "6'11\"",
+    "Salary": 13906976,
+    "Starter": 1,
+    "Team_Name": "Bucks"
+  },
+  {
+    "_id": 25,
+    "Position": "C",
+    "Height": "7'0\"",
+    "Salary": 30913750,
+    "Starter": 1,
+    "Team_Name": "Suns"
+  },
+  {
+    "_id": 26,
+    "Position": "PG",
+    "Height": "6'2\"",
+    "Salary": 0,
+    "Starter": 0,
+    "Team_Name": null
+  },
+  {
+    "_id": 27,
+    "Position": "C",
+    "Height": "7'0\"",
+    "Salary": 0,
+    "Starter": 0,
+    "Team_Name": null
+  },
+  {
+    "_id": 28,
+    "Position": "SF",
+    "Height": "6'7\"",
+    "Salary": 0,
+    "Starter": 0,
+    "Team_Name": null
+  },
+  {
+    "_id": 29,
+    "Position": "SG",
+    "Height": "6'5\"",
+    "Salary": 0,
+    "Starter": 0,
+    "Team_Name": null
+  }
+]

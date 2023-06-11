@@ -1,0 +1,72 @@
+[
+  {
+    "Date_Played": { "$date": "2023-01-06T00:00:00Z" },
+    "Home_Team_Name": "Celtics",
+    "Home_Team_Score": 119,
+    "Away_Team_Name": "Mavericks",
+    "Away_Team_Score": 121
+  },
+  {
+    "Date_Played": { "$date": "2023-01-08T00:00:00Z" },
+    "Home_Team_Name": "Mavericks",
+    "Home_Team_Score": 111,
+    "Away_Team_Name": "Lakers",
+    "Away_Team_Score": 114
+  },
+  {
+    "Date_Played": { "$date": "2023-01-10T00:00:00Z" },
+    "Home_Team_Name": "Lakers",
+    "Home_Team_Score": 101,
+    "Away_Team_Name": "Bucks",
+    "Away_Team_Score": 108
+  },
+  {
+    "Date_Played": { "$date": "2023-01-12T00:00:00Z" },
+    "Home_Team_Name": "Bucks",
+    "Home_Team_Score": 118,
+    "Away_Team_Name": "Suns",
+    "Away_Team_Score": 111
+  },
+  {
+    "Date_Played": { "$date": "2023-01-14T00:00:00Z" },
+    "Home_Team_Name": "Suns",
+    "Home_Team_Score": 104,
+    "Away_Team_Name": "Celtics",
+    "Away_Team_Score": 101
+  },
+  {
+    "Date_Played": { "$date": "2023-01-16T00:00:00Z" },
+    "Home_Team_Name": "Celtics",
+    "Home_Team_Score": 99,
+    "Away_Team_Name": "Lakers",
+    "Away_Team_Score": 107
+  },
+  {
+    "Date_Played": { "$date": "2023-01-18T00:00:00Z" },
+    "Home_Team_Name": "Mavericks",
+    "Home_Team_Score": 133,
+    "Away_Team_Name": "Bucks",
+    "Away_Team_Score": 117
+  },
+  {
+    "Date_Played": { "$date": "2023-01-20T00:00:00Z" },
+    "Home_Team_Name": "Lakers",
+    "Home_Team_Score": 118,
+    "Away_Team_Name": "Suns",
+    "Away_Team_Score": 107
+  },
+  {
+    "Date_Played": { "$date": "2023-01-22T00:00:00Z" },
+    "Home_Team_Name": "Bucks",
+    "Home_Team_Score": 124,
+    "Away_Team_Name": "Celtics",
+    "Away_Team_Score": 121
+  },
+  {
+    "Date_Played": { "$date": "2023-01-24T00:00:00Z" },
+    "Home_Team_Name": "Suns",
+    "Home_Team_Score": 109,
+    "Away_Team_Name": "Mavericks",
+    "Away_Team_Score": 111
+  }
+]

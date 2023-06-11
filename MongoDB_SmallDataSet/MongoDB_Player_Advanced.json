@@ -1,0 +1,122 @@
+[
+  {
+    "$lookup": {
+      "from": "Player",
+      "localField": "Player_ID",
+      "foreignField": "_id",
+      "as": "player"
+    }
+  },
+  {
+    "$unwind": "$player"
+  },
+  {
+    "$match": {
+      "player.Team_Name": {
+        "$ne": null
+      }
+    }
+  },
+  {
+    "$group": {
+      "_id": "$player.Team_Name",
+      "totalPPG": {
+        "$sum": "$PPG"
+      },
+      "totalAPG": {
+        "$sum": "$APG"
+      },
+      "totalRPG": {
+        "$sum": "$RPG"
+      },
+      "players": {
+        "$addToSet": {
+          "Player_ID": "$Player_ID",
+          "PPG": "$PPG",
+          "APG": "$APG",
+          "RPG": "$RPG"
+        }
+      }
+    }
+  },
+  {
+    "$unwind": "$players"
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "Team_Name": "$_id",
+      "Player_ID": "$players.Player_ID",
+      "PPG": "$players.PPG",
+      "teamTotalPPG": "$totalPPG",
+      "APG": "$players.APG",
+      "teamTotalAPG": "$totalAPG",
+      "RPG": "$players.RPG",
+      "teamTotalRPG": "$totalRPG",
+      "TeamPPG": {
+        "$multiply": [
+          {
+            "$divide": [
+              "$players.PPG",
+              "$totalPPG"
+            ]
+          },
+          100
+        ]
+      },
+      "TeamAPG": {
+        "$multiply": [
+          {
+            "$divide": [
+              "$players.APG",
+              "$totalAPG"
+            ]
+          },
+          100
+        ]
+      },
+      "TeamRPG": {
+        "$multiply": [
+          {
+            "$divide": [
+              "$players.RPG",
+              "$totalRPG"
+            ]
+          },
+          100
+        ]
+      }
+    }
+  },
+  {
+    "$lookup": {
+      "from": "Person",
+      "localField": "Player_ID",
+      "foreignField": "_id",
+      "as": "person"
+    }
+  },
+  {
+    "$unwind": "$person"
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "Last_Name": "$person.Last_Name",
+      "TeamPPG": {
+        "$round": [ "$TeamPPG", 2 ]
+      },
+      "TeamAPG": {
+        "$round": [ "$TeamAPG", 2 ]
+      },
+      "TeamRPG": {
+        "$round": [ "$TeamRPG", 2 ]
+      }
+    }
+  },
+  {
+    "$sort": {
+      "TeamPPG": -1
+    }
+  }
+]
